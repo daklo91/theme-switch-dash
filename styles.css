@@ -1,0 +1,91 @@
+:root {
+  /* PRIMITIVE TOKENS */
+
+  /* Typography */
+  --ff-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --fw-regular: 400;
+  --fw-bold: 700;
+  --fs-14: 14px;
+
+  /* Social Colors */
+  --color-green-500: hsl(163, 72%, 41%);
+  --color-red-500: hsl(356, 69%, 56%);
+  --color-facebook: hsl(208, 92%, 53%);
+  --color-twitter: hsl(203, 89%, 53%);
+  --color-youtube: hsl(348, 97%, 39%);
+
+  /* Neutral Colors */
+  --color-white: hsl(0, 100%, 100%);
+  --color-gray-400: hsl(230, 22%, 74%);
+  --color-gray-650: hsl(228, 12%, 44%);
+  --color-gray-900: hsl(232, 19%, 15%);
+  --color-gray-950: hsl(230, 17%, 14%);
+  --color-navy-50: hsl(227, 47%, 96%);
+  --color-navy-950: hsl(228, 28%, 20%);
+  --color-blue-50: hsl(225, 100%, 98%);
+
+  /* Gradients */
+  --gradient-instagram: linear-gradient(
+    to right,
+    hsl(37, 97%, 70%),
+    hsl(5, 77%, 71%),
+    hsl(329, 70%, 58%)
+  );
+  --gradient-toggle-dark: linear-gradient(
+    to right,
+    hsl(210, 79%, 56%),
+    hsl(146, 68%, 55%)
+  );
+}
+
+/* SEMANTIC TOKENS */
+
+/* Dark Theme Mode (System Preference) */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --theme-bg: var(--color-gray-950);
+    --theme-bg-pattern: var(--color-gray-900);
+    --theme-bg-card: var(--color-navy-950);
+
+    --theme-text-primary: var(--color-white);
+    --theme-text-secondary: var(--color-gray-400);
+
+    --theme-toggle: var(--gradient-toggle-dark);
+  }
+}
+
+/* Dark Theme Mode - Default */
+:root,
+[data-theme="dark"] {
+  --theme-bg: var(--color-gray-950);
+  --theme-bg-pattern: var(--color-gray-900);
+  --theme-bg-card: var(--color-navy-950);
+
+  --theme-text-primary: var(--color-white);
+  --theme-text-secondary: var(--color-gray-400);
+
+  --theme-toggle: var(--gradient-toggle-dark);
+}
+
+/* Light Theme */
+[data-theme="light"] {
+  --theme-bg: var(--color-white);
+  --theme-bg-pattern: var(--color-blue-50);
+  --theme-bg-card: var(--color-navy-50);
+
+  --theme-text-primary: var(--color-gray-950);
+  --theme-text-secondary: var(--color-gray-650);
+
+  --theme-toggle: var(--color-gray-400);
+}
+
+/* Styles */
+
+body {
+  margin: 0;
+}
+
+header {
+  background-color: var(--theme-bg);
+  color: var(--theme-text-primary);
+}
