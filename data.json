@@ -1,0 +1,95 @@
+{
+  "totalFollowers": 23004,
+  "mainStats": [
+    {
+      "platform": "facebook",
+      "username": "@nathanf",
+      "count": 1987,
+      "type": "Followers",
+      "changeToday": 12,
+      "isPositive": true
+    },
+    {
+      "platform": "twitter",
+      "username": "@nathanf",
+      "count": 1044,
+      "type": "Followers",
+      "changeToday": 99,
+      "isPositive": true
+    },
+    {
+      "platform": "instagram",
+      "username": "@realnathanf",
+      "count": "11k",
+      "type": "Followers",
+      "changeToday": 1099,
+      "isPositive": true
+    },
+    {
+      "platform": "youtube",
+      "username": "Nathan F.",
+      "count": 8239,
+      "type": "Subscribers",
+      "changeToday": 144,
+      "isPositive": true
+    }
+  ],
+  "overviewToday": [
+    {
+      "platform": "facebook",
+      "metric": "Page Views",
+      "value": 87,
+      "percentageChange": 3,
+      "isPositive": true
+    },
+    {
+      "platform": "facebook",
+      "metric": "Likes",
+      "value": 52,
+      "percentageChange": 2,
+      "isPositive": false
+    },
+    {
+      "platform": "instagram",
+      "metric": "Likes",
+      "value": 5462,
+      "percentageChange": 2257,
+      "isPositive": true
+    },
+    {
+      "platform": "instagram",
+      "metric": "Profile Views",
+      "value": "52k",
+      "percentageChange": 1375,
+      "isPositive": true
+    },
+    {
+      "platform": "twitter",
+      "metric": "Retweets",
+      "value": 117,
+      "percentageChange": 303,
+      "isPositive": true
+    },
+    {
+      "platform": "twitter",
+      "metric": "Likes",
+      "value": 507,
+      "percentageChange": 553,
+      "isPositive": true
+    },
+    {
+      "platform": "youtube",
+      "metric": "Likes",
+      "value": 107,
+      "percentageChange": 19,
+      "isPositive": false
+    },
+    {
+      "platform": "youtube",
+      "metric": "Total Views",
+      "value": 1407,
+      "percentageChange": 12,
+      "isPositive": false
+    }
+  ]
+}
