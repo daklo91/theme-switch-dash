@@ -1,0 +1,37 @@
+/* Figma Variables Export */
+/* Generated on 2026-07-02T11:22:06.837Z */
+/* All Modes */
+
+/* Mode: Mode 1 */
+[data-mode="Mode 1"] {
+  /* COLOR */
+  --colors-black: #000000;
+  --colors-blue-50: #f7f9ff;
+  --colors-blue-500: #1da1f2;
+  --colors-blue-600: #178ff5;
+  --colors-gray-200: #e1e4f0;
+  --colors-gray-400: #aeb3cb;
+  --colors-gray-600: #848bab;
+  --colors-gray-650: #63687d;
+  --colors-gray-900: #20222f;
+  --colors-gray-950: #1d1f29;
+  --colors-green-500: #1eb589;
+  --colors-navy-50: #f1f3fa;
+  --colors-navy-900: #333a55;
+  --colors-navy-950: #252b42;
+  --colors-red-500: #dc414c;
+  --colors-red-700: #c4032b;
+  --colors-white: #ffffff;
+
+  /* FLOAT */
+  --spacing-0: ;
+  --spacing-100: 8;
+  --spacing-200: 16;
+  --spacing-300: 24;
+  --spacing-400: 32;
+  --spacing-500: 40;
+  --spacing-600: 48;
+  --spacing-800: 64;
+
+}
+
