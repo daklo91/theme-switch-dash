@@ -1,6 +1,26 @@
 :root {
   /* PRIMITIVE TOKENS */
 
+  /* 
+    --colors-black: #000000;
+  --colors-blue-50: #f7f9ff;
+  --colors-blue-500: #1da1f2;
+  --colors-blue-600: #178ff5;
+  --colors-gray-200: #e1e4f0;
+  --colors-gray-400: #aeb3cb;
+  --colors-gray-600: #848bab;
+  --colors-gray-650: #63687d;
+  --colors-gray-900: #20222f;
+  --colors-gray-950: #1d1f29;
+  --colors-green-500: #1eb589;
+  --colors-navy-50: #f1f3fa;
+  --colors-navy-900: #333a55;
+  --colors-navy-950: #252b42;
+  --colors-red-500: #dc414c;
+  --colors-red-700: #c4032b;
+  --colors-white: #ffffff;
+  */
+
   /* Typography */
   --ff-sans: "Inter", system-ui, -apple-system, sans-serif;
   --fw-regular: 400;
@@ -15,14 +35,15 @@
   --color-youtube: hsl(348, 97%, 39%);
 
   /* Neutral Colors */
-  --color-white: hsl(0, 100%, 100%);
-  --color-gray-400: hsl(230, 22%, 74%);
-  --color-gray-650: hsl(228, 12%, 44%);
-  --color-gray-900: hsl(232, 19%, 15%);
-  --color-gray-950: hsl(230, 17%, 14%);
-  --color-navy-50: hsl(227, 47%, 96%);
-  --color-navy-950: hsl(228, 28%, 20%);
-  --color-blue-50: hsl(225, 100%, 98%);
+  --color-white: #ffffff;
+  --color-gray-400: #aeb3cb;
+  --color-gray-650: #63687e;
+  --color-gray-900: #20222F;
+  --color-gray-950: #1e202a;
+  --color-navy-50: #f0f2fa;
+  --color-navy-900: #333a55;
+  --color-navy-950: #252a41;
+  --color-blue-50: #f5f7ff;
 
   /* Gradients */
   --gradient-instagram: linear-gradient(
@@ -36,6 +57,16 @@
     hsl(210, 79%, 56%),
     hsl(146, 68%, 55%)
   );
+
+  /* Spacing */
+    --spacing-0: 0px;
+  --spacing-100: 8px;
+  --spacing-200: 16px;
+  --spacing-300: 24px;
+  --spacing-400: 32px;
+  --spacing-500: 40px;
+  --spacing-600: 48px;
+  --spacing-800: 64px;
 }
 
 /* SEMANTIC TOKENS */
@@ -87,7 +118,7 @@ body {
 }
 
 header {
-  background-color: var(--theme-bg);
+  background-color: var(--theme-bg-pattern);
   color: var(--theme-text-primary);
 }
 
@@ -104,4 +135,10 @@ header {
   line-height: 125%;
   letter-spacing: 0;
   font-weight: 700;
+}
+
+.header-container {
+  margin: 0px var(--spacing-400);
+  padding: var(--spacing-300) 0px;
+  border-bottom: 1px solid var(--color-navy-900);
 }
