@@ -117,6 +117,8 @@ body {
   font-family: "Inter", sans-serif;
 }
 
+/* header */
+
 header {
   background-color: var(--theme-bg-pattern);
   color: var(--theme-text-primary);
@@ -129,7 +131,7 @@ header {
   font-weight: 700;
 }
 
-.total-followers {
+.text-preset-5 {
   color: var(--theme-text-secondary);
   font-size: 0.875rem;
   line-height: 125%;
@@ -138,7 +140,30 @@ header {
 }
 
 .header-container {
-  margin: 0px var(--spacing-400);
+  margin: 0px var(--spacing-300);
   padding: var(--spacing-300) 0px;
   border-bottom: 1px solid var(--color-navy-900);
+}
+
+/* dark mode */
+
+.dark-mode-container {
+  margin: var(--spacing-300);
+
+}
+
+.dark-mode-toggler {
+  background-image: var(--gradient-toggle-dark);
+  padding: 3px;
+  width: 50px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.dark-mode-knob {
+  height: 18px;
+  width: 18px;
+  background-color: var(--color-navy-950);
+  border-radius: 100%;
+  transition: all ease 0.2s;
 }
