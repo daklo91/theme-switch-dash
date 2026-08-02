@@ -1,20 +1,19 @@
 export function DarkModeToggle() {
   let darkMode = true; 
 
-  // Legg til at CSS root bytter til lightmode/darkmode da det toggles.
-
-  window.toggleDarkMode = function() {
-  
+window.toggleDarkMode = function() {
     darkMode = !darkMode;
-  
     const darkModeKnob = document.getElementById("dark-mode-knob");
+    const htmlElement = document.documentElement;
 
-    if (darkMode === true)  {
-      darkModeKnob.style.marginLeft = "calc(100% - 18px)"; 
+    if (darkMode === true) {
+        darkModeKnob.style.marginLeft = "calc(100% - 18px)";
+        htmlElement.setAttribute("data-theme", "dark");
     } else {
-      darkModeKnob.style.marginLeft = "0%"; 
+        darkModeKnob.style.marginLeft = "0%";
+        htmlElement.setAttribute("data-theme", "light");
     }
-  };
+};
 
   return `<div class="dark-mode-container">
             <span class="text-preset-5">Dark Mode</span>
