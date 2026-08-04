@@ -38,7 +38,7 @@
   --color-white: #ffffff;
   --color-gray-400: #aeb3cb;
   --color-gray-650: #63687e;
-  --color-gray-900: #20222F;
+  --color-gray-900: #20222f;
   --color-gray-950: #1e202a;
   --color-navy-50: #f0f2fa;
   --color-navy-900: #333a55;
@@ -59,7 +59,7 @@
   );
 
   /* Spacing */
-    --spacing-0: 0px;
+  --spacing-0: 0px;
   --spacing-100: 8px;
   --spacing-200: 16px;
   --spacing-300: 24px;
@@ -149,21 +149,30 @@ header {
 
 .dark-mode-container {
   margin: var(--spacing-300);
-
 }
 
 .dark-mode-toggler {
+  appearance: none;
+  display: block;
   background-image: var(--gradient-toggle-dark);
   padding: 3px;
   width: 50px;
+  height: 24px;
+  border: 0;
   border-radius: 12px;
   cursor: pointer;
 }
 
 .dark-mode-knob {
+  display: block;
   height: 18px;
   width: 18px;
   background-color: var(--color-navy-950);
-  border-radius: 100%;
-  transition: all ease 0.2s;
+  border-radius: 50%;
+  transition: margin-left 0.2s ease;
+}
+
+.dark-mode-toggler:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
 }
