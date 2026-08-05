@@ -176,3 +176,89 @@ header {
   outline: 2px solid currentColor;
   outline-offset: 3px;
 }
+
+/* Cards layout */
+.social-cards-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: var(--spacing-200);
+  margin: var(--spacing-300);
+  padding: var(--spacing-200) 0;
+}
+
+.social-card {
+  background: var(--theme-bg-card);
+  color: var(--theme-text-primary);
+  border-radius: 8px;
+  padding: var(--spacing-200);
+  position: relative;
+  overflow: hidden;
+}
+
+.social-top-border {
+  height: 6px;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  margin: calc(var(--spacing-200) * -1) calc(var(--spacing-200) * -1) var(--spacing-200) calc(var(--spacing-200) * -1);
+}
+
+.card-header {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.header-left { display:flex; align-items:center; gap:12px; }
+.platform-icon { width:20px;height:20px; }
+
+.followers-count {
+  font-size:2rem;
+  font-weight:700;
+  margin: var(--spacing-100) 0;
+  color: var(--theme-text-primary);
+}
+
+.followers-type {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--theme-text-secondary);
+  margin-bottom: var(--spacing-100);
+}
+.card-footer {
+  display:flex;
+  align-items:center;
+  gap:8px;
+  font-weight:700;
+  color: var(--theme-text-secondary);
+}
+
+.card-footer.is-positive { color: var(--color-green-500); }
+.card-footer.is-negative { color: var(--color-red-500); }
+
+.delta-icon { width:10px;height:10px; }
+
+/* Overview section */
+.overview-section { margin: var(--spacing-300); }
+.section-title { margin: 0 0 var(--spacing-200) 0; color: var(--theme-text-secondary); text-transform:capitalize; }
+.overview-grid {
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: var(--spacing-200);
+}
+
+.overview-card {
+  background: var(--theme-bg-card);
+  padding: var(--spacing-200);
+  border-radius:8px;
+  color: var(--theme-text-primary);
+}
+
+.overview-header { display:flex; justify-content:space-between; align-items:center; color:var(--theme-text-secondary); }
+.metric { font-size:0.875rem; font-weight:700; }
+.overview-icon { width:20px; height:20px; }
+
+.overview-body { display:flex; justify-content:space-between; align-items:center; margin-top: var(--spacing-100); }
+.metric-value { font-weight:700; font-size:1.25rem; }
+.metric-change.is-positive { color: var(--color-green-500); }
+.metric-change.is-negative { color: var(--color-red-500); }
+.metric-change img { width:10px;height:10px;margin-right:6px; }
